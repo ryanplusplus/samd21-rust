@@ -1,0 +1,19 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "cwd": "${workspaceRoot}",
+      "name": "Target (JLink)",
+      "request": "launch",
+      "type": "cortex-debug",
+      "device": "ATSAMD21G18A",
+      "executable": "${workspaceFolder}/target/thumbv6m-none-eabi/debug/samd21-rust",
+      "servertype": "jlink",
+      "interface": "swd",
+      "debuggerArgs": ["-q", "-x", "${workspaceRoot}/script/jlink.gdb"]
+    }
+  ]
+}

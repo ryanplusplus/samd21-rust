@@ -1,0 +1,6 @@
+build
+**/*.rs.bk
+.#*
+.gdb_history
+target/
+.vscode
